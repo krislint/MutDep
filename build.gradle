@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+group 'com.moelyon'
+version '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenCentral()
+}
+
+subprojects {
+    repositories {
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    }
+
+}

@@ -1,0 +1,3 @@
+rootProject.name = 'MutDep'
+include("common")
+include("web")
