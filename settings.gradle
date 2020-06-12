@@ -1,3 +1,5 @@
 rootProject.name = 'MutDep'
 include("common")
 include("web")
+include("spring-hello")
+include("spring-hello-autoconfig")

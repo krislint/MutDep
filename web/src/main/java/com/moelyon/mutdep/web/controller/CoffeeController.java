@@ -1,6 +1,7 @@
 package com.moelyon.mutdep.web.controller;
 
 import com.moelyon.common.model.Coffee;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,5 +19,13 @@ public class CoffeeController {
                 .name("qaq")
                 .price(223d)
                 .build();
+    }
+
+    @Autowired
+    private Coffee coffee;
+
+    @GetMapping("/current")
+    public Coffee getCurrentCoffee(){
+        return coffee;
     }
 }

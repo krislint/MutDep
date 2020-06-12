@@ -1,16 +1,22 @@
 package com.moelyon.common.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
 public class Coffee {
     private Long id;
     private String name;
     private Double price;
+
+    public Coffee(String name) {
+        this.name = name;
+        System.out.println("initializing "+name);
+    }
+
+    public Coffee() {
+        this("default");
+    }
 }
+
