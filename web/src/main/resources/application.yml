@@ -1,0 +1,16 @@
+spring-hello.enabled: true
+server:
+  port: 8443
+#  ssl:
+#    key-store: "classpath:moelyon.p12"
+#    key-store-type: PKCS12
+#    key-store-password: moelyon
+#  http2:
+#    enabled: true
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        perfer-ip-address: true
